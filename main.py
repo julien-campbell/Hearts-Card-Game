@@ -10,7 +10,7 @@ from UsernamesandPlayers import players
 
 
 #Playing Hearts
-#Users = players()
-#game = Hearts(Users)
-#game.setup_hearts()
-#game.play_hearts()
+Users = players()
+game = Hearts(Users)
+game.setup_hearts()
+game.play_hearts()
