@@ -1,4 +1,4 @@
-class card:
+class card: #this class creates cards including stuff like suits and numbers
   suits = ["diamonds","clubs", "spades",  "hearts"]
   ranks = ["narf", "narf", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king", "ace"]
 

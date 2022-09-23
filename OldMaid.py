@@ -2,7 +2,7 @@ from CardsClass import card
 from DecksandHands import deck
 from DecksandHands import Hand_OldMaid
 # from UsernamesandPlayers import addbots
-class oldmaid:
+class oldmaid: #this class served as a basis to create cards and make a card game
   def __init__(self):
     self.deck = deck()
     self.deck.shuffle()

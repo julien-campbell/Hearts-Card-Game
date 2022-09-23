@@ -1,4 +1,4 @@
-from CardsClass import card
+from CardsClass import card #This class deals with cards in players hands and the deck
 import random
 import itertools
 class deck:

@@ -29,7 +29,7 @@ class Hearts:
 
 
   def round_one_validation(self, user_card, players_cards):
-    if user_card.suit == 3 or user_card == card(2,12):
+    if user_card.suit == 3 or user_card == card(2,12): #Make sure hearts arn't played in first round
       print('\nWrong card, no Hearts or Queen of Spades can be played in round 1. Try again!')
       return False
     elif card(0,2) == players_cards[0]:
@@ -52,7 +52,7 @@ class Hearts:
   def rounds_validation(self, user_cards, players_hand, round_suit):
 
     if round_suit == 10:
-      if user_cards.suit == 3 and self.heart_broken == False:
+      if user_cards.suit == 3 and self.heart_broken == False: #Make sure hearts are only played when allowed
         print('\nWrong card, Hearts have not been broken. Try again!')
         return False
       else:
@@ -64,7 +64,7 @@ class Hearts:
         return True
 
     else:
-      for singlecard in players_hand:
+      for singlecard in players_hand: #Make sure player plays correct suit
         if round_suit == singlecard.suit:
           print('\nWrong card, must play the same suit as the first player. Try again!')
           return False

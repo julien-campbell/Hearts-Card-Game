@@ -1,6 +1,6 @@
 from DecksandHands import Hand_Hearts
 from CardsClass import card
-class player:
+class player: #This class helps with the player pick and play cards
   def __init__(self, name):
     self.name = name
     self.bot = False
